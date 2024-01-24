@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+        <script>
+const coustumer=[
+{ 
+    firstName:"naveen",
+    lastName:"reddy",
+    postCode:517620
+},
+{ 
+    firstName:"naveen",
+    lastName:"reddy",
+    postCode:517620
+},
+{ 
+    firstName:"naveen",
+    lastName:"reddy",
+    postCode:517620
+}
+];
+  var naveen=coustumer.map(function(value){
+
+ return{...value,dod:moment(value).format("MMM Do YY") };
+
+
+ });
+ console.log(naveen); 
+
+</script>
+</body>
+</html>

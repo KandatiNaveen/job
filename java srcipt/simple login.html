@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder=" entername" id="username">
+    <input type="text" placeholder="password" id="password"> 
+    <button onclick="login()">login</button>
+    <script>
+function login(){
+    var gmail=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
+
+    if(username.includes("  "))
+    {
+       alert("notvalid");
+       return;
+
+    }
+
+    if(username==0){
+        alert("required");
+        return;
+
+
+    }
+    if(password==0){
+        alert("required");
+        return;
+
+        
+    }
+
+    if(gmail=="kiran"&&password==12345){
+        alert("success");
+      }
+      else{
+        alert("not success");
+
+      }
+
+
+}
+
+    </script>
+  
+
+  
+</body>
+</html>

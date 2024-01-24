@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var arr = [1,2,3,45,"naveen",234,"xyz"];
+
+arr.forEach(function(value){
+console.log(value);
+
+}) 
+var naveen=arr.filter(function(value){
+
+
+return typeof value=="number";
+
+})
+    console.log(naveen);
+
+    var finalnaveen = naveen.map(function(value){
+        return value*2;
+   
+    })
+
+    
+
+    </script>
+</body>
+</html>

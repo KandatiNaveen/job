@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doc</title>
+</head>
+<body>
+<input type="text" id="username" onkeyup="validate()" placeholder=" enter name">
+<span id="msg"></span>
+    <script>
+var users =["naveen","nithin","abhi","vatsav"]
+function validate(){
+    var username=document.getElementById("username").value
+  
+
+    if(users.includes(username)){
+        document.getElementById("msg").innerText="this is already have";
+        document.getElementById("msg").style.color="red";
+    }
+        else{
+            document.getElementById("msg").innerText="this is avaliable ";
+            document.getElementById("msg").style.color="green";
+
+        }
+    }
+
+
+
+    </script>
+</body>
+</html>

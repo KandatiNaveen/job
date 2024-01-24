@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <i onclick="incermentlikes" class="fa fa-thumbs-up" style="font-size:48px;color:red"></i>
+    <span id="likescount">0</span>
+   
+   <script>
+var likes=0;
+function incermentlikes(){
+    likes++;
+document.getElementById("likescount").innerText=likes;
+
+
+}
+
+    </script>
+</body>
+</html>
